@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  background: url("cricket.jpg") no-repeat center center fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+body .parentForm {
+  height: 100%;
+  width: 100%;
+}
+
+body .childForm {
+  margin: auto;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translateY(85%);
+          transform: translateY(85%);
+}
+
+body .form-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 30px 15px 30px;
+  border-radius: 20px 20px 20px 20px;
+  height: 32vh;
+}
+
+body .form-group {
+  position: relative;
+}
+
+body label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: #c5c5c5;
+  font-size: 12px;
+  pointer-events: none;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body input:focus ~ label {
+  top: -14px;
+  left: 0;
+  font-size: 14px;
+  color: #2980b9;
+}
+
+body input:valid ~ label {
+  position: absolute;
+  top: -14px;
+  left: 0;
+  font-size: 14px;
+  color: #2980b9;
+}
+
+body input[type="text"], body [type="password"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #c5c5c5;
+  border-radius: 0 0 0 0;
+  color: #fff;
+  outline: none;
+}
+
+body .form-control-no-border:focus {
+  border-color: #c5c5c5;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+body .btn {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
